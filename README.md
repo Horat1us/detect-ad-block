@@ -1,15 +1,19 @@
 # Detect Ad Block
 Simple module to detect advertising block add-on in browser using Promise.
 
-Based on [FuckAdBlock@4.0.0-beta3](https://github.com/sitexw/FuckAdBlock/tree/4.0.0-beta.3):
- - simplified
  - Promise-based
  - TypeScript
+ - ESM/CommonJS support
 
 *Require *Promise* to be supported or polifylled.*
 
+Inspired by [FuckAdBlock@4.0.0-beta3](https://github.com/sitexw/FuckAdBlock/tree/4.0.0-beta.3).
+
 ## Installation
-Using [npm](https://npmjs.com/package/detect-ad-block)
+Using [npm](https://npmjs.com/package/detect-ad-block):
+```bash
+npm i detect-ad-block@^1.0
+```
 
 ## Usage
 
@@ -73,6 +77,10 @@ const detectAdBlock = DetectAdBlock([
     },
 ])
 ```
+
+## Contributors
+- [Alexander <horat1us> Letnikow](mailto:reclamme@gmail.com)
+- [Valentin Allaire](mailto:valentin.allaire@sitexw.fr) - as author of [FuckAdBlock](https://github.com/sitexw/FuckAdBlock)
 
 ## License
 [MIT](./LICENSE)
