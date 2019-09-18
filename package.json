@@ -1,0 +1,46 @@
+{
+  "name": "detect-ad-block",
+  "version": "1.0.0",
+  "description": "Browser Ad Block add-ons detector",
+  "main": "dist/detect-ad-block.cjs.js",
+  "module": "dist/detect-ad-block.esm.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build:types": "tsc --project tsconfig.types.json",
+    "build:compile": "rollup -c",
+    "build:rm": "rm -rf ./dist",
+    "build": "npm run build:rm && npm run build:types && npm run build:compile",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horat1us/detect-ad-block.git"
+  },
+  "keywords": [
+    "ad-block",
+    "detector",
+    "adblock",
+    "adblock",
+    "detect",
+    "detect",
+    "advertising",
+    "blocker",
+    "ad",
+    "ublock"
+  ],
+  "author": "Alexander <horat1us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Horat1us/detect-ad-block/issues"
+  },
+  "homepage": "https://github.com/Horat1us/detect-ad-block#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "rollup": "^1.18.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.6.3"
+  }
+}

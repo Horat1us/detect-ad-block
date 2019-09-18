@@ -1,0 +1,11 @@
+.idea/
+.DS_Store
+src/
+tests/
+README.md
+.git/
+.gitignore
+rollup.config.js
+.babelrc
+tsconfig.types.json
+tslint.json
