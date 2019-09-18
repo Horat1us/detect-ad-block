@@ -12,13 +12,13 @@ Inspired by [FuckAdBlock@4.0.0-beta3](https://github.com/sitexw/FuckAdBlock/tree
 ## Installation
 Using [npm](https://npmjs.com/package/detect-ad-block):
 ```bash
-npm i detect-ad-block@^1.0
+npm i @horat1us/detect-ad-block@^1.0
 ```
 
 ## Usage
 
 ```javascript
-import { DetectAdBlock } from "./src";
+import { DetectAdBlock } from "@horat1us/detect-ad-block";
 
 function detect() {
     const detectAdBlock = DetectAdBlock();
@@ -51,7 +51,7 @@ You may use built-in plugins:
 Also, you may implement custom plugin using [DetectPlugin](./src/plugins/DetectPlugin.ts) interface.
 
 ```javascript
-import { DetectAdBlock, plugins } from "./src";
+import { DetectAdBlock, plugins } from "@horat1us/detect-ad-block";
 
 const detectAdBlock = DetectAdBlock([
     // your plugins list

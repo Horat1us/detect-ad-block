@@ -1,5 +1,5 @@
 {
-  "name": "detect-ad-block",
+  "name": "@horat1us/detect-ad-block",
   "version": "1.0.0",
   "description": "Browser Ad Block add-ons detector",
   "main": "dist/detect-ad-block.cjs.js",
@@ -10,7 +10,8 @@
     "build:compile": "rollup -c",
     "build:rm": "rm -rf ./dist",
     "build": "npm run build:rm && npm run build:types && npm run build:compile",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "git push && git push --tags && npm run build && npm publish --access=public"
   },
   "repository": {
     "type": "git",
